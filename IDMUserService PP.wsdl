@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://IdentityManagement.integrazioni.esse3.kion.it/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns0="http://IdentityManagement.integrazioni.esse3.kion.it" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://IdentityManagement.integrazioni.esse3.kion.it">
+    <wsdl:documentation>Web Service ad uso di una eventuale integrazione con un sistema di Identity Management esterno</wsdl:documentation>
+    <wsdl:types>
+        <xs:schema xmlns:ns="http://IdentityManagement.integrazioni.esse3.kion.it" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://IdentityManagement.integrazioni.esse3.kion.it">
+            <xs:import namespace="http://IdentityManagement.integrazioni.esse3.kion.it/xsd"/>
+            <xs:element name="assegnaEmail">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="codiceFiscale" type="xs:string"/>
+                        <xs:element name="tipoUtenza" type="xs:string"/>
+                        <xs:element name="email" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="assegnaEmailResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="ns1:IDMUserResult1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="cambiaUserName">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="codiceFiscale" type="xs:string"/>
+                        <xs:element name="tipoUtenza" type="xs:string"/>
+                        <xs:element name="userName" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="cambiaUserNameResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="ns1:IDMUserResult1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="trovaUtenze">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="codiceFiscale" type="xs:string"/>
+                        <xs:element minOccurs="0" name="tipoUtenza" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="trovaUtenzeResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="ns1:IDMUserResult"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="trovaUtenza">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="codiceFiscale" type="xs:string"/>
+                        <xs:element name="tipoUtenza" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="trovaUtenzaResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="ns1:IDMUserResult1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+        <xs:schema xmlns:ax29="http://IdentityManagement.integrazioni.esse3.kion.it/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://IdentityManagement.integrazioni.esse3.kion.it/xsd">
+            <xs:complexType name="IDMUserResult">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="data" nillable="true" type="ns1:IDMUserData"/>
+                    <xs:element minOccurs="0" name="message" nillable="true" type="xs:string"/>
+                    <xs:element name="success" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="IDMUserData">
+                <xs:sequence>
+                    <xs:element name="codiceFiscale" type="xs:string"/>
+                    <xs:element name="cognome" type="xs:string"/>
+                    <xs:element minOccurs="0" name="email" nillable="true" type="xs:string"/>
+                    <xs:element name="id" type="xs:long"/>
+                    <xs:element name="idAnag" type="xs:long"/>
+                    <xs:element name="nome" type="xs:string"/>
+                    <xs:element name="tipoUtente" type="xs:string"/>
+                    <xs:element name="userName" type="xs:string"/>
+                    <xs:element name="utenzaAbilitata" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="IDMUserResult1">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="data" nillable="true" type="ns1:IDMUserData"/>
+                    <xs:element minOccurs="0" name="message" nillable="true" type="xs:string"/>
+                    <xs:element name="success" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="cambiaUserNameRequest">
+        <wsdl:part name="parameters" element="ns0:cambiaUserName"/>
+    </wsdl:message>
+    <wsdl:message name="cambiaUserNameResponse">
+        <wsdl:part name="parameters" element="ns0:cambiaUserNameResponse"/>
+    </wsdl:message>
+    <wsdl:message name="trovaUtenzaRequest">
+        <wsdl:part name="parameters" element="ns0:trovaUtenza"/>
+    </wsdl:message>
+    <wsdl:message name="trovaUtenzaResponse">
+        <wsdl:part name="parameters" element="ns0:trovaUtenzaResponse"/>
+    </wsdl:message>
+    <wsdl:message name="assegnaEmailRequest">
+        <wsdl:part name="parameters" element="ns0:assegnaEmail"/>
+    </wsdl:message>
+    <wsdl:message name="assegnaEmailResponse">
+        <wsdl:part name="parameters" element="ns0:assegnaEmailResponse"/>
+    </wsdl:message>
+    <wsdl:message name="trovaUtenzeRequest">
+        <wsdl:part name="parameters" element="ns0:trovaUtenze"/>
+    </wsdl:message>
+    <wsdl:message name="trovaUtenzeResponse">
+        <wsdl:part name="parameters" element="ns0:trovaUtenzeResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="IDMUserServicePortType">
+        <wsdl:operation name="cambiaUserName">
+            <wsdl:input message="ns0:cambiaUserNameRequest" wsaw:Action="urn:cambiaUserName"/>
+            <wsdl:output message="ns0:cambiaUserNameResponse" wsaw:Action="urn:cambiaUserNameResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="trovaUtenza">
+            <wsdl:input message="ns0:trovaUtenzaRequest" wsaw:Action="urn:trovaUtenza"/>
+            <wsdl:output message="ns0:trovaUtenzaResponse" wsaw:Action="urn:trovaUtenzaResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="assegnaEmail">
+            <wsdl:input message="ns0:assegnaEmailRequest" wsaw:Action="urn:assegnaEmail"/>
+            <wsdl:output message="ns0:assegnaEmailResponse" wsaw:Action="urn:assegnaEmailResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="trovaUtenze">
+            <wsdl:input message="ns0:trovaUtenzeRequest" wsaw:Action="urn:trovaUtenze"/>
+            <wsdl:output message="ns0:trovaUtenzeResponse" wsaw:Action="urn:trovaUtenzeResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="IDMUserServiceSOAP11Binding" type="ns0:IDMUserServicePortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="cambiaUserName">
+            <soap:operation soapAction="urn:cambiaUserName" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="trovaUtenza">
+            <soap:operation soapAction="urn:trovaUtenza" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="assegnaEmail">
+            <soap:operation soapAction="urn:assegnaEmail" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="trovaUtenze">
+            <soap:operation soapAction="urn:trovaUtenze" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="IDMUserService">
+        <wsdl:port name="IDMUserServiceSOAP11port_http" binding="ns0:IDMUserServiceSOAP11Binding">
+            <soap:address location="https://sssup.esse3.pp.cineca.it/services/IDMUserService/IDMUserService.wsdl/esse3/services/IDMUserService"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,31 @@
+{
+    "Info_titolo":"Identity Management"
+    ,"Info_acl":"S=Superuser, R=Lettura, W=Scrittura, U=Utente, I=ICT"
+    
+    ,"manutenzione":0
+    
+    ,"TABS":{"account":"user","cerca":"search","ldap_ad":"user-edit","eccezioni":"user-clock","password":"key","foto":"portrait","mail_list":"envelope","permessi_ugov":"user-tag","attivita":"file-invoice","ict":"database","acl":"unlock-alt"}
+    ,"TABS_DESC":{"account":"account","cerca":"caerca","ldap_ad":"Ldap AD","eccezioni":"eccezioni","password":"password","foto":"foto","mail_list":"mail list","permessi_ugov":"permessi ugov","attivita":"attivita","ict":"ict","acl":"acl"}
+
+    ,"gruppo_richiedenti":""
+		,"s.crespina":{"account":"U","acl":""}
+		,"m.vignoni":{"account":"U","acl":""}
+		,"c.dambrosio":{"account":"U","acl":""}
+		
+    ,"gruppo_cambio_password":""
+		,"f.gattai":{"password":"U","acl":""}
+
+    ,"gruppo_ICT":""
+		,"a.bongiorni":{"account":"S","cerca":"S","ldap_ad":"S","eccezioni":"S","password":"S","foto":"S","mail_list":"S","permessi_ugov":"S","attivita":"S","acl":"S","ict":"S"}
+		,"i.lisi"      :{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":""}
+		,"s.fermo"     :{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":""}
+		,"a.giari"     :{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":"I"}
+		,"g.esposito"  :{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":""}
+		,"e.bicchierai":{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":""}
+		,"a.pellegrini":{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":""}
+		,"f.tamburini" :{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":""}
+		,"f.pagani"    :{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":""}
+		,"a.mazzieri"  :{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":""}
+		,"fe.fornai"   :{"account":"I","cerca":"I","eccezioni":"I","password":"I","mail_list":"I","permessi_ugov":"I","attivita":"I","ict":"I","acl":""}
+
+}

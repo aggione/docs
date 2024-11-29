@@ -1,0 +1,18 @@
+AuthType shibboleth
+ShibRequestSetting requireSession 1
+# Require valid-user
+
+# --- lista degli utenti abilitati
+require shib-user a.bongiorni@sssup.it
+require shib-user a.giari@sssup.it
+require shib-user a.pellegrini@sssup.it
+require shib-user e.bicchierai@sssup.it
+require shib-user f.pagani@sssup.it
+require shib-user f.tamburini@sssup.it
+require shib-user g.esposito@sssup.it
+require shib-user i.lisi@sssup.it
+require shib-user s.fermo@sssup.it
+require shib-user a.mazzieri@sssup.it
+require shib-user fe.fornai@sssup.it
+
+require shib-user a.carlucci@sssup.it

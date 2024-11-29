@@ -1,0 +1,306 @@
+{
+    "app": {
+        "cineca": {
+            "UGOV": {
+                "attivo": 1,
+                "d": "UGOV",
+                "note": "",
+                "o1_url": "https://www.u-gov.sssup.it/",
+                "o2_url": "https://www.u-gov.sssup.it/u-gov/",
+                "p": "",
+                "u": "a.bongiorni@sssup.it",
+                "url": "https://www.u-gov.sssup.it/u-gov-sso/login?service=https%3A%2F%2Fwww.u-gov.sssup.it%3A443%2Fu-gov%2Fbp%2F"
+            }
+        },
+        "dotnetu": {
+            "AFFILIATI": {
+                "attivo": 1,
+                "d": "Gestione Affiliati, Visiting, Phd Nazionali, Proferrori Emeriti",
+                "note": "",
+                "p": "",
+                "u": "a.bongiorni@sssup.it",
+                "url": "https://dotnetu.local/affiliati/aff23.php"
+            },
+            "ASTOR": {
+                "attivo": 1,
+                "d": "Archivio storico",
+                "note": "",
+                "p": "",
+                "u": "a.bongiorni@sssup.it",
+                "url": "https://dotnetu.local/astor/index.html"
+            },
+            "CS": {
+                "attivo": 1,
+                "d": "Corsi e seminari",
+                "note": "",
+                "p": "",
+                "u": "a.bongiorni@sssup.it",
+                "url": "https://dotnetu.local/cs/cs_2021.html"
+            },
+            "IMM": {
+                "attivo": 1,
+                "d": "Immobili",
+                "note": "",
+                "p": "",
+                "u": "a.bongiorni@sssup.it",
+                "url": "https://dotnetu.local/immobili/immobili.html"
+            },
+            "RAC": {
+                "attivo": 1,
+                "d": "Ricerca Anagrafiche Centralizzate",
+                "note": "",
+                "o1_url": "https://dotnetu.local/rac/rac.html",
+                "p": "",
+                "u": "a.bongiorni@sssup.it",
+                "url": "https://www.santannapisa.it/rac/rac.html"
+            },
+            "TRASP": {
+                "attivo": 1,
+                "d": "Estrazioni dati per la trasparenza",
+                "note": "",
+                "p": "",
+                "u": "a.bongiorni@sssup.it",
+                "url": "https://dotnetu.local/trasparenza/trasp.html"
+            },
+            "UA": {
+                "attivo": 1,
+                "d": "ms UA",
+                "note": "",
+                "p": "",
+                "u": "a.bongiorni@sssup.it",
+                "url": "https://dotnetu.local/ms/ua.php"
+            }
+        },
+        "iam": {
+            "IAM": {
+                "attivo": 1,
+                "d": "Identity Access Management",
+                "note": "",
+                "p": "",
+                "u": "a.bongiorni@sssup.it",
+                "url": "https://iam.local"
+            }
+				}
+    },
+    "db": {
+        "adldap": {
+            "AD": {
+                "attivo": 1,
+                "d": "AD",
+                "host": "192.168.64.81",
+                "note": "",
+                "p": "readuser",
+                "port": "389",
+                "sql": "",
+                "tns": "AD",
+                "tnsx": "OU=U.O. Servizi Prova,OU=ADprova,DC=sssapisa,DC=it",
+                "u": "sssapisa.it/OpenLdap/Servizi ICT/User Read"
+            },
+            "LDAP": {
+                "attivo": 1,
+                "d": "LDAP",
+                "host": "192.168.64.11",
+                "note": "",
+                "p": "fugasse",
+                "port": "389",
+                "sql": "",
+                "tns": "LDAP",
+                "tnsx": "OU=OpenLdap,DC=sssapisa,DC=it",
+                "u": "cn=manager,o=sss,c=it"
+            }
+        },
+        "mssql": {
+            "TimeAtLunch": {
+                "attivo": 1,
+                "d": "TimeAtLunch",
+                "db": "TimeAtLunch",
+                "host": "192.168.64.147",
+                "note": "",
+                "p": "solari",
+                "sql": "",
+                "tns": "TimeAtLunch",
+                "tnsx": "",
+                "u": "sa"
+            }
+        },
+        "mysql": {
+            "ictservice": {
+                "attivo": 1,
+                "d": "ictsevice",
+                "db": "covid",
+                "host": "",
+                "note": "",
+                "p": "cMo382P6fWiFP2s5",
+                "sql": "",
+                "tns": "ictservice.local",
+                "tnsx": "",
+                "u": "covid"
+            },
+            "minisiti": {
+                "attivo": 0,
+                "d": "minisiti",
+                "db": "capitalisegenetics",
+                "host": "",
+                "note": "",
+                "p": "c4p1t4l1s3g3n3t1cs",
+                "sql": "",
+                "tns": "192.168.64.209",
+                "tnsx": "",
+                "u": "capitalisegenetics"
+            },
+            "prenotazione aule": {
+                "attivo": 0,
+                "d": "prenotazione aule",
+                "db": "booked",
+                "host": "",
+                "note": "",
+                "p": "n1njaG02020",
+                "sql": "",
+                "tns": "crbs.local",
+                "tnsx": "",
+                "u": "booked"
+            },
+            "sss_import": {
+                "attivo": 0,
+                "d": "sss_import",
+                "db": "",
+                "host": "",
+                "note": "",
+                "p": "ugovimport",
+                "sql": "",
+                "tns": "localhost",
+                "tnsx": "",
+                "u": "sss_import"
+            },
+            "storico_ldap": {
+                "attivo": 0,
+                "d": "vecchio storico ldap",
+                "db": "storico_ldap",
+                "host": "",
+                "note": "",
+                "p": "Ld4pSt0r1c0",
+                "sql": "",
+                "tns": "localhost",
+                "tnsx": "",
+                "u": "storico_ldap"
+            },
+            "storico_ldap_produzione": {
+                "attivo": 1,
+                "d": "storico ldap PRODUZIONE",
+                "db": "storico_ldap",
+                "host": "",
+                "note": "",
+                "p": "Ld4pSt0r1c0",
+                "sql": "",
+                "tns": "mysql",
+                "tns_dotnetu": "idmngt.local",
+                "tnsx": "",
+                "u": "storico_ldap"
+            }
+        },
+        "oracle": {
+            "HRSERV": {
+                "attivo": 1,
+                "d": "Vecchio db Solari",
+                "note": "",
+                "p": "kltpzyxm",
+                "sql": "",
+                "tns": "HRSERV",
+                "tnsx": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.64.143)(PORT=1521))(CONNECT_DATA=(SID=ORCL)))",
+                "u": "sss_hrs"
+            },
+            "HRSERV2020": {
+                "attivo": 1,
+                "d": "Nuovo db Solari presenze",
+                "note": "",
+                "p": "kltpzyxm",
+                "sql": "",
+                "tns": "HRSERV2020",
+                "tnsx": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.64.147)(PORT=1521))(CONNECT_DATA=(SID=XE)))",
+                "u": "sss_hrs"
+            },
+            "IRIS_PROD": {
+                "attivo": 0,
+                "d": "CINECA IRIS produzione",
+                "note": "",
+                "p": "Alb0|B0ng1",
+                "sql": "",
+                "tns": "IRIS_PROD",
+                "tnsx": "(DESCRIPTION = (ADDRESS_LIST = (LOAD_BALANCE = ON) (FAILOVER = ON)(ADDRESS=(PROTOCOL=TCP)(HOST=cman01-ext.dbc.cineca.it)(PORT=5555))(ADDRESS=(PROTOCOL=TCP)(HOST=cman02-ext.dbc.cineca.it)(PORT=5555)))(CONNECT_DATA = (SERVICE_NAME = iris_sssup_prod_ext.cineca.it)))",
+                "u": "AU_SSSUP_PROD_002"
+            },
+            "ORACLESRV": {
+                "attivo": 0,
+                "d": "Macchina fisica Oracle Server",
+                "note": "",
+                "p": "ugovimport",
+                "sql": "",
+                "tns": "ORACLESRV",
+                "tnsx": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.64.103)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=UGOV)))",
+                "u": "SSS_IMPORT"
+            },
+            "ORAXEWIN10": {
+                "attivo": 1,
+                "d": "Nuovo db Interscambio",
+                "note": "",
+                "p": "ugovimport",
+                "sql": "",
+                "tns": "ORAXEWIN10",
+                "tnsx": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.64.140)(PORT=1521))(CONNECT_DATA=(SID=XE)))",
+                "u": "C##SSS_IMPORT"
+            },
+            "SSS-DB": {
+                "attivo": 1,
+                "d": "Vecchio db Interscambio",
+                "note": "",
+                "p": "ugovimport",
+                "sql": "",
+                "tns": "SSS-DB",
+                "tnsx": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.64.24)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=UGOV)))",
+                "u": "sss_import"
+            },
+            "SSSUP_PROD": {
+                "attivo": 0,
+                "d": "CINECA UGOV produzione",
+                "note": "",
+                "p": "Alb0|B0ng1",
+                "sql": "",
+                "tns": "SSSUP_PROD",
+                "tnsx": "(DESCRIPTION = (ADDRESS_LIST = (LOAD_BALANCE = ON) (FAILOVER = ON)(ADDRESS=(PROTOCOL=TCP)(HOST=cman01-ext.dbc.cineca.it)(PORT=5555))(ADDRESS=(PROTOCOL=TCP)(HOST=cman02-ext.dbc.cineca.it)(PORT=5555)))(CONNECT_DATA = (SERVICE_NAME = ugov_sssup_prod_ext.cineca.it )))",
+                "u": "AU_SSSUP_PROD_001"
+            }
+        },
+        "postgres": {
+            "PG albo dotnetu": {
+                "attivo": 0,
+                "d": "PG su Dotnetu",
+                "note": "",
+                "p": "4lb0",
+                "sql": "",
+                "tns": "PG albo dotnetu",
+                "tnsx": "host=localhost port=5432 dbname=albo",
+                "u": "albo"
+            },
+            "PG biblio": {
+                "attivo": 1,
+                "d": "PG Biblioteca, Lavanderia, Posta",
+                "note": "",
+                "p": "inglese",
+                "sql": "",
+                "tns": "PG biblio",
+                "tnsx": "host=192.168.64.7 port=5432 dbname=sssdb",
+                "u": "bibliouser"
+            },
+            "PG idb2": {
+                "attivo": 0,
+                "d": "PG Biblioteca",
+                "note": "",
+                "p": "inglese",
+                "sql": "",
+                "tns": "PG idb2",
+                "tnsx": "host=idb2.local port=5432 dbname=sssdb",
+                "u": "bibliouser"
+            }
+        }
+    }
+}
